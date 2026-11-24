@@ -1,0 +1,50 @@
+:root {
+  --bg: #fbfaf7;
+  --fg: #1d1d1b;
+  --muted: #6b6a66;
+  --line: #e4e1da;
+  --accent: #2f5d50;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161615;
+    --fg: #ecebe6;
+    --muted: #9b9a94;
+    --line: #2c2b29;
+    --accent: #7fb8a4;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 72px 20px 48px;
+}
+h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 4px; font-weight: 600; }
+h2 {
+  font: 600 0.78rem/1.4 system-ui, -apple-system, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 48px 0 12px;
+}
+.role { color: var(--muted); margin: 0; }
+a { color: var(--accent); }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 20px; margin: 0; }
+dt { color: var(--muted); }
+dd { margin: 0; }
+address { font-style: normal; }
+footer {
+  margin-top: 64px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font: 0.85rem/1.5 system-ui, -apple-system, sans-serif;
+  color: var(--muted);
+}
+footer a { color: inherit; }
