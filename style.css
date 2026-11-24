@@ -55,3 +55,7 @@ ul { padding-left: 1.2em; margin: 0; }
 .cv-head span, .cv-role { color: var(--muted); }
 .cv-head span { font: 0.85rem/1.9 system-ui, -apple-system, sans-serif; }
 .cv p { margin: 4px 0 0; }
+.lead { font-size: 1.15rem; margin-top: 32px; }
+.plain { list-style: none; padding: 0; }
+.plain li { margin-bottom: 14px; }
+.small { color: var(--muted); font-size: 0.9rem; }
